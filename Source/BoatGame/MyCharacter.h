@@ -60,5 +60,12 @@ public:
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Interaction")
 		FHitResult HitObject;
-	
+
+	void MoveForward(float Val);
+
+	void MoveRight(float Val);
+
+	void LookUp(float Val);
+
+	void LookRight(float Val);
 };

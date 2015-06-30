@@ -45,7 +45,38 @@ void AMyCharacter::Tick(float DeltaTime)
 void AMyCharacter::SetupPlayerInputComponent(class UInputComponent* InputComponent)
 {
 	Super::SetupPlayerInputComponent(InputComponent);
+	InputComponent->BindAxis("MoveForwardBack", this, &AMyCharacter::MoveForward);
+	InputComponent->BindAxis("MoveLeftRight", this, &AMyCharacter::MoveRight);
+	InputComponent->BindAxis("LookUpDown", this, &AMyCharacter::LookUp);
+	InputComponent->BindAxis("Turn", this, &AMyCharacter::LookRight);
+}
 
+//Movement
+void AMyCharacter::MoveForward(float Val)
+{
+	if (Val != 0)
+	{
+		AddMovementInput(this->GetActorForwardVector(), Val);
+	}
+}
+
+void AMyCharacter::MoveRight(float Val)
+{
+	if (Val != 0)
+	{
+		AddMovementInput(this->GetActorRightVector(), Val);
+	}
+}
+
+//Mouse look
+void AMyCharacter::LookUp(float Val)
+{
+	AddControllerPitchInput(Val);
+}
+
+void AMyCharacter::LookRight(float Val)
+{
+	AddControllerYawInput(Val);
 }
 
 //Line trace
@@ -105,3 +136,4 @@ void AMyCharacter::UpdatePickupLocation(float HoldingDistance)
 		PhysicsHandle->SetTargetLocationAndRotation(Location + PlayerCamera->GetForwardVector() * HoldingDistance + FVector(0, 0, 50.f), PlayerCamera->GetComponentRotation());
 	}
 }
+
