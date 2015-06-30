@@ -68,4 +68,6 @@ public:
 	void LookUp(float Val);
 
 	void LookRight(float Val);
+
+	void Jumpy();
 };

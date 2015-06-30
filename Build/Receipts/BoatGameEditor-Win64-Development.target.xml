@@ -7,12 +7,12 @@
     <Property Name="Precompile" Value="False" />
   </Properties>
   <BuildProducts>
-    <BuildProduct Path="$(ProjectDir)\Plugins\OceanPlugin\Binaries\Win64\UE4Editor-OceanPlugin-9296.dll" Type="DynamicLibrary" />
-    <BuildProduct Path="$(ProjectDir)\Plugins\OceanPlugin\Binaries\Win64\UE4Editor-OceanPlugin-9296.pdb" Type="SymbolFile" />
-    <BuildProduct Path="$(ProjectDir)\Plugins\OceanPlugin\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-OceanPlugin-9296.lib" Type="ImportLibrary" />
-    <BuildProduct Path="$(ProjectDir)\Binaries\Win64\UE4Editor-BoatGame-9296.dll" Type="DynamicLibrary" />
-    <BuildProduct Path="$(ProjectDir)\Binaries\Win64\UE4Editor-BoatGame-9296.pdb" Type="SymbolFile" />
-    <BuildProduct Path="$(ProjectDir)\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BoatGame-9296.lib" Type="ImportLibrary" />
+    <BuildProduct Path="$(ProjectDir)\Plugins\OceanPlugin\Binaries\Win64\UE4Editor-OceanPlugin-8066.dll" Type="DynamicLibrary" />
+    <BuildProduct Path="$(ProjectDir)\Plugins\OceanPlugin\Binaries\Win64\UE4Editor-OceanPlugin-8066.pdb" Type="SymbolFile" />
+    <BuildProduct Path="$(ProjectDir)\Plugins\OceanPlugin\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-OceanPlugin-8066.lib" Type="ImportLibrary" />
+    <BuildProduct Path="$(ProjectDir)\Binaries\Win64\UE4Editor-BoatGame-8066.dll" Type="DynamicLibrary" />
+    <BuildProduct Path="$(ProjectDir)\Binaries\Win64\UE4Editor-BoatGame-8066.pdb" Type="SymbolFile" />
+    <BuildProduct Path="$(ProjectDir)\Intermediate\Build\Win64\UE4Editor\Development\UE4Editor-BoatGame-8066.lib" Type="ImportLibrary" />
   </BuildProducts>
   <RuntimeDependencies>
     <RuntimeDependency Path="$(EngineDir)/Binaries/ThirdParty/PhysX/PhysX-3.3/Win64/VS2013/PhysX3PROFILE_x64.dll" />

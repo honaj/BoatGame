@@ -49,6 +49,7 @@ void AMyCharacter::SetupPlayerInputComponent(class UInputComponent* InputCompone
 	InputComponent->BindAxis("MoveLeftRight", this, &AMyCharacter::MoveRight);
 	InputComponent->BindAxis("LookUpDown", this, &AMyCharacter::LookUp);
 	InputComponent->BindAxis("Turn", this, &AMyCharacter::LookRight);
+	InputComponent->BindAction("Jump", IE_Pressed, this, &AMyCharacter::Jump);
 }
 
 //Movement
@@ -77,6 +78,11 @@ void AMyCharacter::LookUp(float Val)
 void AMyCharacter::LookRight(float Val)
 {
 	AddControllerYawInput(Val);
+}
+
+void AMyCharacter::Jumpy()
+{
+	this->Jump();
 }
 
 //Line trace
