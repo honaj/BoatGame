@@ -6,6 +6,8 @@ public class BoatGame : ModuleRules
 {
 	public BoatGame(TargetInfo Target)
 	{
+        PrivateDependencyModuleNames.AddRange(new string[] { "Slate", "SlateCore", "EditorStyle", "UMG" });
+
 		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore" });
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
