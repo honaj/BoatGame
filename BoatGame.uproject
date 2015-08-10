@@ -21,6 +21,14 @@
 		{
 			"Name": "OculusRift",
 			"Enabled": false
+		},
+		{
+			"Name": "CodeView",
+			"Enabled": true
+		},
+		{
+			"Name": "CodeEditor",
+			"Enabled": true
 		}
 	]
 }
